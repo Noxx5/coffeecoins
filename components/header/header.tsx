@@ -23,14 +23,21 @@ const Header = () => {
   return (
     <header className='sticky top-0 left-0 border-b'>
       <div className='container mx-auto py-2 flex items-center justify-between'>
-        <div className='flex items-center gap-2.5'>
-          <Image
-            src='/coffeecoins_logo.svg'
-            alt='Logo'
-            width={48}
-            height={48}
-          />
-          <span className='text-base uppercase tracking-wide'>Coffeecoins</span>
+        <div>
+          <Link
+            href='/'
+            className='flex items-center gap-2.5'
+          >
+            <Image
+              src='/coffeecoins_logo.svg'
+              alt='Logo'
+              width={48}
+              height={48}
+            />
+            <span className='text-base uppercase tracking-wide'>
+              Coffeecoins
+            </span>
+          </Link>
         </div>
         <nav></nav>
         <div className='flex items-center gap-4'>
